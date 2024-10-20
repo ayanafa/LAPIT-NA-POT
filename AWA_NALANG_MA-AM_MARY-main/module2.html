@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2</title>
+    <link rel="stylesheet" href="module2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="module2.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="#"><img src="logo.png" class="logo_pic"> </a>
+                </div>
+                <ul class="navbar">
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="landingpage.html#about">About</a></li>
+                    <li><a href="landingpage.html#creators">Creators</a></li>
+                    <li><a href="#">Lessons</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" class="search" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 20px; color: white; position: absolute;"></i>
+                </div>
+            </div>
+
+         <ul class="language-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li class="highlight">C#</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Go</li>
+        </ul>
+
+        </nav>
+
+
+    </header>
+
+
+    <div class="container" >
+        <div class="scrollbar">
+            <ul>
+                <i class="fa-solid fa-arrow-right f2"></i>
+                <li class="link"><a href="module1.html">Introduction to C#</a></li>
+                <i class="fa-solid fa-arrow-down" style="padding-right: 5vh;"></i>
+                <li> Conditionals and Loops in C#</a></li>
+                <div class="descrip">
+                   <a href="#condi"><dd class="under_descrip"> • Conditionals</dd></a>
+                   <a href="#switch"><dd class="under_descrip"> • The Switch Statement</dd></a>
+                   <a href="#whileloop"> <dd class="under_descrip"> • The While Loop </dd></a>
+                   <a href="#forloop"><dd class="under_descrip"> • The For Loop</dd></a>
+                   <a href="#dowhileloop"><dd class="under_descrip"> • The Do-while Loop</dd></a>
+                   <a href="#break"><dd class="under_descrip"> • Break and Conditionals</dd></a>
+                   <a href="#logical"><dd class="under_descrip"> • Logical Operators</dd></a>
+                   <a href="#ternary"><dd class="under_descrip"> • Ternary Operator </dd></a>
+                    <dd class="under_descrip"> • Quiz </dd></a>
+                </div>
+
+                    <i class="fa-solid fa-arrow-right f3"></i>
+                    <i class="fa-solid fa-arrow-right f4"></i>
+                <li class="link"><a href="module3.html">Methods to C#</a></li>
+                <li class="link"><a href="module4.html">Classes and Objects in C#</a></li>
+
+            </ul>
+        </div>
+        <dl class="description-list">
+            <br>
+            <dt id="condi"> Conditionals</dt>
+            <dd> 1. <span> The if-else statement </span> <br>
+                <span>A. The if statement </span>
+                -	 Conditional statement that executes a block of code when a condition <br>returns a Boolean value of true.
+                -	Can have conditions of any expression, as long as it returns <br>Boolean value (true or false)
+                 <br>
+                <span> B. Relational operators</span> <br>
+                •Used mostly to evaluate conditions for conditional statements
+                • Uses a variety of operators for <br>different expressions <br>
+                <img src="relational.png" class="relat">
+                <br>
+                <span> C. The else Clause </span> <br>
+                -	A clause that can be used for the for the if statement. <br>
+                -	Can be specified to execute a block of code when the condition in the if block returns a false value. <br>
+                <span> D. Nested if-else Statements </span> <br>
+                -	These are if-else statements within another if-else statement. <br>
+                -	Programmers can nest an infinite amount of if-else statements. <br>
+                <span> E. The if-else-if Statement </span> <br>
+                  -	A compound conditional statement that can be used to help a program to decide among <br> Three (3) or more actions. <br>
+                  -	An if statement can have zero (0) or more else-if’s clauses and they must come before the last else clause, <br>which is optional. <br>
+                  -	Once an else-if clause succeeds, none of the remaining else-if’s or else clauses will be tested. <br> </dd>
+
+            <dt id="switch">  The switch Statement </dt>
+            <dd> -	Provides a more elegant way to test a variable for equality against a list of values. <br>
+                -	Each value is called a case, and the variable being switched on is checked for each switch case. <br>
+                -	A switch statement can include any number of cases. But, no two case labels may contain the <br>same constant value <br>
+                -	 Each case should have a break statement to end the code block <br>
+                <span> A. The Default Case </span> <br>
+                -	An optional case that is executed when none of the previous cases match. <br>
+                -	Essentially similar in principle to the else statement. <br>
+            </dd>
+
+            <dt id="whileloop"> The While Loop </dt>
+            <dd> -	Repeatedly executes a block of code as long as a given condition is satisfied. <br>
+                 -	If the condition is not satisfied during a given repetition or iteration , the loop will stop running. <br>
+                 -	 Compound arithmetic, and increment or decrement operators (both prefix and postfix) <br> can be used to further control the number of times a loop runs. <br>
+                </dd>
+
+            <dt id="forloop">The For Loop </dt> <br>
+            <dd> -	A type of loop that executes a statement for a specific number of times. <br>
+                 -	Declares a variable for a counter (also called the loop control variable), commonly named <br>
+                 -	 The condition evaluates the value of the counter and the body of loop is executed if the condition is satisfied. <br>
+                 -	After loop execution, the increment statement will update the counter. <br>
+
+                 -	 The loop will then continue to repeat until the condition fails to be satisfied with the current values. <br>
+                 </dd>
+
+            <dt id="dowhileloop"> The Do-while Loop </dt> <br>
+            <dd> -	A loop structure that is fundamentally similar to the while loop. <br>
+                 -	 The only difference is that this loop is guaranteed to execute an iteration at least one time <br>
+                 </dd>
+
+            <dt id="break"> Break and Continue </dt> <br>
+            <dd> <span> A. The break Statement </span> <br>
+                -  Used for terminating certain control structures, such as switch statements and loops. <br>
+                -	For switch statements, absence of break statements will cause ALL case statements <br>
+                -	After the matching case statement to be executed, even when the case labels don’t match <br> the switch variable. <br>
+                -	 For loop bodies, the statement can be used to immediately terminate a loop if given a certain condition; <br> the break statement stops the loop from repeatedly executing statements. <br>
+
+                <span> B. The Continue Statement </span> <br>
+                -	Is fundamentally similar to the break statement. <br>
+                -	 Differs to the break statement in that, instead of terminating the loop entirely, it skips the current <br>iteration of the loop and continues on to the next iteration. <br>
+
+                 </dd>
+
+            <dt id="logical"> Logical Operators</dt>
+            <dd> <img src="logical.png" class="condi"> <br>
+                -	Used to join multiple expressions and/or conditions. <br>
+                -	Can only return Boolean values (true or false). <br>
+                -	 Can be used to create compound conditions and expressions that allow for executions of specific <br> code blocks in a program. <br>
+                <span> A.	The AND (&&) operator </span> <br>
+                -	Represented by two ampersand signs <br>
+                -	Only returns Boolean value if all expressions are true <br>
+                <img src="AND.png" class="and"> <br>
+                -	Any operand that returns a false will make the entire expression return as false <br>
+                <span>  B.	The OR (||) operator </span> <br>
+                -	Represented by two vertical bars <br>
+                -	Will return a value of true when at least one of the operand returns true <br>
+                <img src="OR.png" class="oro"> <br>
+                <span> C.	The logical NOT (!) operator </span> <br>
+                -	Represented by the exclamation mark <br>
+                -	Will work even if it has one operand <br>
+                -	Reverses the logical state of an operand <br>
+                <img src="NOT.png" class="logical">
+            </dd>
+
+
+            <dt id="ternary"> The Conditional (Ternary) ? Operator </dt>
+            <dd> The ? operator is used to simplify expressions with three parts. <br>
+                - It evaluates the first expression, which results in a Boolean value. <br>
+                - If the first expression is true, the second expression is evaluated and becomes the result. <br>
+                - If the first expression is false, the third expression is evaluated and becomes the result. <br>
+
+
+
+
+     <h2 id="quiz"></h2>
+    <p class="quiz_text">Quiz</p>
+    <div class="quiz-container">
+        <div class="quiz-block">
+            <h2 class="questions">Question 1</h2>
+            <p class="lines">_____________________________________________________</p>
+            <p class="questions_number">What does an “if” statement do?</p>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="A">
+                    A) Repeat a block of code
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="B">
+                    B) Execute a block of code when a condition is false
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="C">
+                    C) Execute a block of code when a condition return true
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="D">
+                    D) Switches between multiple cases
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 2</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">Which of the following is true for a “switch” statement? </h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="A">
+                    A) A variable can only be checked against one value
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="B">
+                    B) It does not need break statement
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="C">
+                    C) No two causes can have the same value
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="D">
+                    D) It cannot include multiple cases
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 3</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">What is the purpose of the "else" clause in an 'if-else' statement?</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="A">
+                    A) To execute when the 'if' condition is true
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="B">
+                    B) To execute when the 'if' condition is false
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="C">
+                    C) To repeat the loop
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="D">
+                    D) To stop the execution
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 4</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">What does the "&&"(AND) operator return if one operand is false?</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="A">
+                    A) True
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="B">
+                    B) False
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="C">
+                    C) True if both operand are true
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="D">
+                    D) Undefined
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 5</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">Which loop guaranteed to excute atleast one?</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="A">
+                    A) for loop
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="B">
+                    B) while loop
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="C">
+                    C) do-whie loop
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="D">
+                    D) swicth loop
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 6</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number"> What happens when the “continue” statement is used in a loop?</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="A">
+                    A) It stop the entire loop
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="B">
+                    B) It skips the current iteration and continues to the next one
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="C">
+                    C) It exit the loop and the program
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="D">
+                    D) It starts the loop over from the beginning
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 7</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">In a "switch" statement, what happens if the 'break' statement is missing?</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="A">
+                    A) Only the matching case will be executed
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="B">
+                    B) All the subsequent cases will be executed even if they don't match
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="C">
+                    C) The loop will terminate
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="D">
+                    D) The program will crash
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 8</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">What does the conditional(ternary(?)) operator do?</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="A">
+                    A) Executes a block of code in a loop
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="B">
+                    B) Reverses the result of a Boolean expression
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="C">
+                    C) Simplifies expressions by evaluating a condition and returning one of two values
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="D">
+                    D) Executes multiple cases in a `switch` statement
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 9</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">What is the difference between the "while" and "for" loops?</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="A">
+                    A) "for" loops dont need a condition
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="B">
+                    B) "while" loops run a specific number of times
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="C">
+                    C) "for" loops include initialization, condition, and increment in one line
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="D">
+                    D) "while" loops exceute atleast once
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+            <div class="quiz-block">
+                <h2 class="questions">Question 10</h2>
+                <p class="lines">_____________________________________________________</p>
+                <h2 class="questions_number">Which operator returns true if atleast one operand is true?</h2>
+                <form class="quiz-form">
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="A">
+                        A) AND (&&)
+                    </label>
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="B">
+                        B) OR (||)
+                    </label>
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="C">
+                        C) NOT (!)
+                    </label>
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="D">
+                        D) XOR
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+
+
+        </div>
+    </div>
+    </dl>
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer-icons">
+        <a href="https://facebook.com" class="icon facebook">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" class="icon instagram">
+            <img src="instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://youtube.com" class="icon youtube">
+            <img src="youtube_orig.png" alt="YouTube">
+        </a>
+    </div>
+    <p>All rights reserved</p>
+</footer>
+
+<script>
+    let lastScrollTop = 0;
+const languageList = document.querySelector('.language-list');
+
+window.addEventListener('scroll', function() {
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+if (scrollTop > lastScrollTop && scrollTop > 100) {
+// Scrolling down
+languageList.style.transform = 'translateY(-600%)'; // Hide the list
+languageList.style.opacity = '0'; // Optional: Add fade effect
+} else if (scrollTop < lastScrollTop) {
+// Scrolling up
+languageList.style.transform = 'translateY(0)'; // Show the list
+languageList.style.opacity = '1'; // Optional: Fade in
+}
+
+lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+   </script>
+</body>
+</html>

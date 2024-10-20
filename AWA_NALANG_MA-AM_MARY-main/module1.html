@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1</title>
+    <link rel="stylesheet" href="module1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="module1.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="#"><img src="logo.png" class="logo_pic"> </a>
+                </div>
+                <ul class="navbar">
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="landingpage.html#about">About</a></li>
+                    <li><a href="landingpage.html#creators">Creators</a></li>
+                    <li><a href="#">Lessons</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" class="search" placeholder="Search...">
+                </div>
+            </div>
+            <i class="fa-solid fa-magnifying-glass" style="font-size: 20px; color: white; position: absolute;"></i>
+        </nav>
+         <ul class="language-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li class="highlight">C#</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Go</li>
+
+        </ul>
+
+
+
+    </header>
+    <div class="container">
+        <div class="scrollbar">
+            <ul>
+                <i class="fa-solid fa-arrow-down"></i>
+                <li>Introduction to C#</li>
+                <div class="descrip">
+               <a href="intro"><dd class="under_descrip"> • Introduction to C#</dd></a>
+               <a href="#var"><dd class="under_descrip"> • Variables C#</dd></a>
+               <a href="#Print"><dd class="under_descrip"> • Printing </dd></a>
+               <a href="#input"><dd class="under_descrip"> • Getting user input</dd>
+               <a href="comment"> <dd class="under_descrip"> • Comments</dd></a>
+               <a href="varkey"><dd class="under_descrip"> • var keyword</dd></a>
+               <a href="#cons"><dd class="under_descrip"> • Constants</dd></a>
+                <a href="#operators"><dd class="under_descrip"> • Arithmetic Operators</dd></a>
+               <a href="#assignment"><dd class="under_descrip"> • Assignment and Increments</dd></a>
+               <a href="#quiz"><dd class="under_descrip"> • Quiz</dd> </a>
+            </div>
+
+
+                <i class="fa-solid fa-arrow-right f2"></i>
+
+                <i class="fa-solid fa-arrow-right f3"></i>
+                <i class="fa-solid fa-arrow-right f4"></i>
+                <li> <a href="module2.html">Conditionals and Loops in C#</a></li>
+                <li><a href="module3.html">Methods in C#</a></li>
+                <li><a href="module4.html">Classes and Objects in C#</a></li>
+
+
+            </ul>
+        </div>
+
+        <dl class="description-list">
+            <dt id="intro"> What is C#?</dt>
+            <dd> <span> A. </span>It is an elegant object-oriented language that enables users to build secure,<br> robust applications that can run on .NETFramework. <br><br>
+                <span> Parts of .NETFramework </span> <br>
+                • The Common Language Runtime (CLR) is the foundation of . NETFramework <br>
+                • it also has a class library in which it is a collection of classes, interfaces and <br>value types that allows you to accomplish a wide variety of tasks<br>
+                <span>B.</span>	C# uses . NETFramework extensively to do common tasks and provide different functions
+
+            </dd>
+            <dt id="var">Variables</dt>
+            <dd> <span>A</span>	These are also known as data types<br>
+               <span> B. </span>	They define what kind of data can be stored, memory needed for the task, and provide different functions<br>
+                Supported data types in C#<br>
+                <span> 1. </span> Int: whole numbers<br>
+                <span> 2. </span>	String: Texts<br>
+                <span> 3. </span>	Float: small decimal numbers<br>
+                <span> 4. </span>	Double: accommodates bigger decimal numbers than float<br>
+                <span> 5. </span>	Char: supports single alphanumerical characters<br>
+                <span> 6. </span>	Bool: only accepts boolean values; true or false </dd>
+
+                <dt id="print">Printing Texts</dt>
+            <dd>1.	Uses Console.ReadLine() <br>
+                2.	Its input is automatically assigned as string<br>
+                3.	Input values can be changed by using;<br>
+                <span> A. </span>	Convert.ToDouble(), converts the assigned string as double<br>
+                <span> B.</span> Convert.ToBoolean(), converts the assigned string as a boolean<br>
+                <span> C. </span> Convert.ToInt(), converts the assigned string as int based on <br>the specific size bit of the integer
+                    Int 16, int 32 and int 64</dd>
+
+                    <dt id="input">Getting user input</dt>
+            <dd> 1.	Uses Console.ReadLine() <br>
+                 2.	Its input is automatically assigned as string <br>
+                 3.	Input values can be changed by using; <br>
+                   A.	<span>Convert.ToDouble() </span>, converts the assigned string as double <br>
+                   B.	<span>Convert.ToBoolean() </span>, converts the assigned string as a boolean <br>
+                   C.	<span>Convert.ToInt(), </span> converts the assigned string as int based on the specific size <br> bit of the integer Int 16, int 32 and int 64 </dd>
+
+            <dt id="comment">Comments</dt>
+            <dd> A.	These are explanatory statements <br>
+            B.	The compiler ignores the comment <br>
+             <span> TWO TYPES OF COMMENTS: </span> <br>
+               1.	<span> Single line comment </span> <br>
+                      -	Begins with two forward slashes (//) <br>
+               2.	<span> Multi line comments </span> <br>
+                      -	Has multiple lines <br>
+                      -	Begins with  /* and ends with */ </dd>
+
+            <dt id="varkey">The var keytwords</dt>
+            <dd> • allows the compiler to automatically determine a variables type based on the assigned value <br>
+                 • must be initialized to avoid errors  </dd>
+
+            <dt id="cons">Contants</dt>
+            <dd> • These are the types of values that cannot be changed once assigned a value. </dd>
+
+            <dt id="operators">Arithmetic Operators</dt>
+            <dd> • Commonly used to perform mathematical operations on values <br>
+                 • Most operators are either arithmetic or logical <br>
+                A.	<span> Supported operators and its symbol </span>
+                    -	(+) addition <br>
+                    -	(-)subtraction <br>
+                    -	(*)multiplication <br>
+                    -	(/) division <br>
+                    -	(%) modulus <br>
+
+                    <img src="table.jpg" alt="Table" style="margin-top: 40px; margin-bottom: 40px;">
+                    </dd>
+
+            <dt id="assignment">Assignments and Increments</dt>
+            <dd> • assigns a value from left to right side of the operator <br>
+                 • denoted by the symbol (=) <br>
+                 •C# also provides Compound Assignments Operators, that performs an operation <br>and assignment at the same time, this can be done by adding the appropriate <br>arithmetic operator sequence or precedence before the equal sign <br>
+
+                 <span> A. Increment denoted by (++) </span> <br>
+                    -	Increases the value of int by 1 <br>
+                  <span> Types of increment </span>
+                    -	Prefix: increments the value first before evaluating the expression <br>
+                    -	Postfix: evaluates the expression before incrementing <br>
+                 <span>	B. Decrement denoted by (--) </span> <br>
+                    -	Decreases the value of int by 1 <br>
+                   <span> Types of decrement </span> <br>
+                    -	Prefix: decrements the value first before evaluating the expression <br>
+                    -	Postfix: evaluates the expression before decrementing <br> </dd>
+
+    <h2 id="quiz"></h2>
+    <p class="quiz_text">Quiz</p>
+    <div class="quiz-container">
+        <div class="quiz-block">
+            <h2 class="questions">Question 1</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">It is another name for data types</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="A">
+                    A) Variables
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="B">
+                    B) C#
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="C">
+                    C) String
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer1" value="D">
+                    D) int
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 2</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">This data type can store numbers </h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="A">
+                    A) int
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="B">
+                    B) Char
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="C">
+                    C) Float
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer2" value="D">
+                    D) Double
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 3</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">This can support small decimal numbers </h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="A">
+                    A) Double
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="B">
+                    B) Char
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="C">
+                    C) Float
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer3" value="D">
+                    D) int
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 4</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">Complete the line of code, Console.Write_______()</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="A">
+                    A) Console.Write
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="B">
+                    B) Console.WriteLine
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="C">
+                    C) Console.ReadLine
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer4" value="D">
+                    D) Console.Line
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 5</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">This type of code can get user input</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="A">
+                    A) Console.Write
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="B">
+                    B) Console.WriteLine
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="C">
+                    C) Console.ReadLine
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer5" value="D">
+                    D) Console.Line
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 6</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">This comment starts with two (2) forward slashed (//)</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="A">
+                    A) Single line comment
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="B">
+                    B) Multi line comment
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="C">
+                    C) Comment section
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer6" value="D">
+                    D) Asterisk
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 7</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">Denoted by the symbol (++)</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="A">
+                    A) Increment
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="B">
+                    B) Decrement
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="C">
+                    C) Postfix
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer7" value="D">
+                    D) Prefix
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 8</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">This data type only returns the value of true or false</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="A">
+                    A) int
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="B">
+                    B) String
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="C">
+                    C) Boolean
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer8" value="D">
+                    D) Char
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+
+        <div class="quiz-block">
+            <h2 class="questions">Question 9</h2>
+            <p class="lines">_____________________________________________________</p>
+            <h2 class="questions_number">This data type can store one alphanumerical symbol</h2>
+            <form class="quiz-form">
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="A">
+                    A) int
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="B">
+                    B) String
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="C">
+                    C) Boolean
+                </label>
+                <label class="choice-block">
+                    <input type="radio" name="answer9" value="D">
+                    D) Char
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+            <div class="quiz-block">
+                <h2 class="questions">Question 10</h2>
+                <p class="lines">_____________________________________________________</p>
+                <h2 class="questions_number">These are explanatory statements that the compiler ignores </h2>
+                <form class="quiz-form">
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="A">
+                        A) Comment
+                    </label>
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="B">
+                        B) Message
+                    </label>
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="C">
+                        C) Private message
+                    </label>
+                    <label class="choice-block">
+                        <input type="radio" name="answer10" value="D">
+                        D) int
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://facebook.com" class="icon facebook">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" class="icon instagram">
+                <img src="instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://youtube.com" class="icon youtube">
+                <img src="youtube_orig.png" alt="YouTube">
+            </a>
+        </div>
+        <p>All rights reserved</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+const languageList = document.querySelector('.language-list');
+
+window.addEventListener('scroll', function() {
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+if (scrollTop > lastScrollTop && scrollTop > 100) {
+  // Scrolling down
+  languageList.style.transform = 'translateY(-600%)'; // Hide the list
+  languageList.style.opacity = '0'; // Optional: Add fade effect
+} else if (scrollTop < lastScrollTop) {
+  // Scrolling up
+  languageList.style.transform = 'translateY(0)'; // Show the list
+  languageList.style.opacity = '1'; // Optional: Fade in
+}
+
+lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+       </script>
+
+</body>
+</html>

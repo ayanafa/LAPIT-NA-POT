@@ -1,0 +1,417 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    box-shadow: 1px 5px 15px black;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+
+.f2 {
+    font-size: 30px;
+    color: white;
+    z-index: 10;
+    top: 6vh;
+    left: 41vh;
+    position: relative;
+}
+
+
+.f3 {
+    font-size: 30px;
+    color:white;
+    z-index: 10;
+    top: 6vh;
+    left: 41vh;
+    position: relative;
+    
+}
+
+.f4 {
+    font-size: 30px;
+    color: white;
+    z-index: 10;
+    top: 13.5vh;
+    left: 37vh;
+    position: relative;
+    
+}
+
+.fa-arrow-down {
+    font-size: 30px;
+    z-index: 1000;
+    color: white;
+    float: right;
+    padding-top: 2vh;
+    padding-right: 7vh ;
+    right: 10vh;
+}
+
+
+.logo {
+    flex: 4;
+}
+
+.logo_pic {
+    height: 90px;
+    float: left;
+    z-index: 1000;
+    object-fit: cover; 
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    padding-left: 40px;
+    margin-top: 10px;
+    
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.navbar li {
+    padding: 20px 10px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.navbar a {
+    color: #0f3460;
+    text-decoration: none;
+    position: relative;
+    
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust as needed */
+    height: 2px; /* Line thickness */
+    background-color: #0f3460; /* Line color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.language-list {
+    display: flex;
+    position: fixed; /* or sticky, based on your need */
+    width: 100%;
+    top: 7.5vh;
+    z-index: 1000;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #0f3460;
+    padding: 10px 0;
+    color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for both */
+    opacity: 1; /* Initial opacity */
+}
+
+.language-list.hidden {
+    opacity: 0; /* Optional: Fade out */
+    transform: translateY(-100%); /* Slide up */
+    pointer-events: none; /* Prevent interaction */
+}
+
+.language-list li {
+    padding: 10px 20px;
+    border-radius: 5px; /* Padding around list items */
+    transition: background-color 1s; /* Smooth transition for hover effect */
+}
+
+.language-list li:hover {
+    background-color: white; /* Change this color on hover */
+    color: #22436b;
+     /* Change text color on hover */
+}
+
+.highlight {
+    
+    color: #22436b; /* Makes C# bold */
+    background-color: white; /* Optional: highlight color for C# */
+}
+
+
+.search-container {
+    flex: 1;
+    margin-left: 3vh;
+    
+     /* Align search to the right */
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-top: 2px;
+    height: 27px;
+    width: 25vh;
+    color: white;
+    background-color: #0f3460;
+}
+
+.search::placeholder {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.fa-magnifying-glass {
+    color: white;
+    position: absolute;
+    top: 5vh;
+    left: 197vh;
+    font-size: 20px;
+}
+
+
+.container {
+    display: flex;
+    margin-top: 13vh;
+    
+}
+
+.scrollbar {
+    width: 380px;
+    height: 600px;
+    overflow-y: auto;
+    background-color: white;
+    border-right: 2px solid #ccc;
+    padding-right: 5px;
+    scrollbar-color: #0f3460 #ccc;
+    scrollbar-width: 30px;
+    margin-top: 8vh;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.scrollbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.scrollbar li {
+    padding: 16px;
+    
+    margin-bottom: 5px;
+    background-color: #2c3e4c;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #e7eaed;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+.scrollbar li:hover {
+    background-color: rgb(142, 143, 156);
+    
+}
+
+.descrip dd{
+ padding: 8px;
+ border-radius: 6px;
+ font-size: 18px;
+ transition: 0.5s;
+ margin-bottom: 5px;
+ color: black;
+ 
+}
+
+.descrip a {
+    text-decoration: none;
+}
+
+.descrip dd:hover{
+    background-color: gainsboro;
+   }
+
+.description-list {
+    margin-left: 20px;
+}
+
+.description-list dt {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #0f3460;
+}
+
+.description-list dd {
+    font-size: 20px;
+    color: #555;
+    display: block;
+    font-weight: 500;
+}
+
+span {
+    font-weight: bolder;
+    color: black;
+}
+
+
+
+
+
+.quiz-block {
+    width: 900px; 
+    /* Set specific width for each block */
+    background: #ffffff; /* Background color for each question block */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 15px 0; /* Space between blocks */
+   
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Title color */
+}
+
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.choice-block {
+    background: white; /* Background color for choices */
+    border-radius: 5px;
+    color: #0f3460;
+    font-weight: bold;
+    border: 2px solid #0f3460;
+    padding: 10px;
+    margin: 5px 0; /* Space between choices */
+    display: flex;
+    align-items: center; /* Align items in the center */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.choice-block:hover {
+    background: #d1e0f7; /* Change background on hover */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 50vh;
+    margin-left: 30vh;
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #22436b;
+}
+
+.quiz_text {
+    font-size: 60px;
+    color: #0f3460;
+    font-weight: bold;
+}
+
+.questions_number {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5vh;
+}
+
+.questions {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.lines {
+    margin-left: 23vh;
+}
+
+
+
+.footer {
+    background-color: #0f3460;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 1205vh;
+    width: 98.7%;
+
+}
+
+.footer-icons {
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circle shape */
+    overflow: hidden; /* Ensures the image is contained */
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon img {
+    width: 100%; /* Scale image to fit the circle */
+    height: auto; /* Maintain aspect ratio */
+    transition: filter 0.3s; /* Smooth transition for filter */
+}
+
+.icon:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.icon:hover img {
+    filter: brightness(0.5); /* Darken image on hover */
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+

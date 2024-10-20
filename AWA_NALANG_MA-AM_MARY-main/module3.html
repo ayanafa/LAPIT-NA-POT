@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3</title>
+    <link rel="stylesheet" href="module3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="module3.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="#"><img src="logo.png" class="logo_pic"> </a>
+                </div>
+                <ul class="navbar">
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="landingpage.html#about">About</a></li>
+                    <li><a href="landingpage.html#creators">Creators</a></li>
+                    <li><a href="#">Lessons</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" class="search" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 20px; color: white; position: absolute;"></i>
+                </div>
+            </div>
+
+         <ul class="language-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li class="highlight">C#</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Go</li>
+        </ul>
+
+        </nav>
+
+
+    </header>
+
+
+    <div class="container">
+        <div class="scrollbar">
+            <ul>
+                <i class="fa-solid fa-arrow-right f2"></i>
+                <li> <a href="module1.html">Introduction to C#</a></li>
+                <i class="fa-solid fa-arrow-right f2"></i>
+                <li> <a href="module2.html">Conditionals and Loops in C#</a></li>
+
+                <i class="fa-solid fa-arrow-down"></i>
+                <li>Methods in C#</li>
+
+                <div class="descrip">
+                 <a href="#intro"><dd class="under_descrip"> • Introduction to Method</dd></a>
+                  <a href="#methodpara"><dd class="under_descrip"> • Method Parameters</dd></a>
+                  <a href="#multipara"><dd class="under_descrip"> • Multiple Parameters</dd></a>
+                  <a href="#optional">   <dd class="under_descrip"> •  Optional and Named Arguments</dd></a>
+                   <a href="#methodover"><dd class="under_descrip"> • Method Overloading</dd></a>
+                   <a href="#recur"> <dd class="under_descrip"> • Recursion</dd></a>
+                   <a href="#quiz"><dd class="under_descrip"> • Quiz</dd></a>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right f2"></i>
+                <li><a href="module4.html">Classes and Objects in C#</a></li>
+
+            </ul>
+        </div>
+        <dl class="description-list">
+            <dt id="intro"> Intro to Methods </dt>
+            <dd> <span> A. What is Methods? </span> <br>
+                -	Collection of statements that are grouped together to perform a task <br>
+                -	Can be predefined automatically by C# or by the developers themselves <br>
+
+                <span> B. Advantages of using Methods </span> <br>
+                 <span> i.	Code reusability </span> <br>
+                -	    Can be called anywhere on the program <br>
+                <span> ii.	Easy testing </span> <br>
+                -	Methods are easily tested, making debugging more simplified <br>
+                <span> iii.	Modifiability </span> <br>
+                -	The program does not get affected when changing methods, making easy modifications <br>
+                <span> iv.	Input versatility </span> <br>
+                -	Methods accept various inputs such as variables and values <br>
+
+            <span> C.	Declaring methods </span> <br>
+            -	Methods should be declared first before using them on the program <br>
+                Method declaration must include; <br>
+                 a.	Return type: what method will return <br>
+                 b.	Method name: unique identifier for the method <br>
+                 c.	Parameters: optional inputs for methods, defined by data types and variables <br>
+
+            <span> D. Calling Methods </span> <br>
+                    -	Methods can be called by their name and passing required arguments <br>
+                    </dd>
+
+            <dt id="methodpara"> Method Parameters </dt>
+            <dd> -	Also called arguments, parameters are variables that accept values when passed into the <br>method they are being called <br>
+                -	Placed within a parentheses () after the method’s name <br>
+                </dd>
+
+                <dt class="multipara"> Multiple Parameters </dt>
+                <dd> -	Can have more than one parameter <br>
+                    -	Allows method to do more complex operations and multiple inputs <br>
+                    -	Values are returned using the “return” statement, denoted by “return” statement <br>
+                    -	Methods can be called with specific parameters, and they can also be assigned to variables, <br> as long as the variable can store the returned data type. <br>
+                    </dd>
+
+            <dt id="optional"> Optional and Named Arguments </dt>
+            <dd> <span> A.	Optional arguments </span> <br>
+                -	Has a default value specified as optional parameters <br>
+                -	Default values can be overridden if there are some optional arguments that is defined <br>
+                -	Can be done by calling a method with a different set of parameter value <br>
+
+                <span> B.	Named arguments </span> <br>
+                -	Can be specified by matching the parameter’s name <br>
+                -	Allows programmers to disregard the order of parameters in a call statement for a method <br>
+                -	Uses the name of parameter followed by a ( : ) colon and the value <br>
+
+             </dd>
+
+            <dt id="methodover"> Method overloading </dt>
+            <dd> -	Mechanism in C# that declares multiple instances of methods that has the same value <br>while having different parameters <br>
+                -	Data type of a parameter un a particular method that will only accept values corresponding <br>to the specified data type <br>
+                -	Parameters can be used in other data types for different instances <br>
+                </dd>
+
+
+            <dt id="recur"> Recursion </dt>
+            <dd> -	Repeated application of a procedure that reduces it to smaller, simpler version <br>
+                -	It applies or execute the procedures on itself and/or any of it’s given value, until procedure <br>cannot be applied no more <br>
+                <span> A. Recursive Methods </span> <br>
+                -	Methods that call themselves <br>
+                -	Includes a number of statement of declaration and execution <br>
+                -	Exit condition is a conditional statement that contains the base case <br>
+                -	The recursive call is a code block after the exit condition <br>
+                -	Usually contains operations and/or tasks performed for recursive process and it’s values <br>
+                -	Used on certain tasks such as arithmetic applications or finding the value of a factorial. <br>
+
+                 </dd>
+
+
+
+
+     <h2 id="quiz"></h2>
+     <p class="quiz_text">Quiz</p>
+     <div class="quiz-container">
+         <div class="quiz-block">
+             <h2 class="questions">Question 1</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What is a method?</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer1" value="A">
+                     A) A type of variable
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer1" value="B">
+                     B)  A collection of statement that perform a task
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer1" value="C">
+                     C) A class
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer1" value="D">
+                     D) A loop
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+         </div>
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 2</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What is the main advantage of using method</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer2" value="A">
+                     A) Makes the code longer
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer2" value="B">
+                     B) They can be reused
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer2" value="C">
+                     C) They make a programs slower
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer2" value="D">
+                     D) They are hard to test
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+         </div>
+
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 3</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What must a method declaration include?</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer3" value="A">
+                     A) Return type, method name, and optional parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer3" value="B">
+                     B) Only a return type
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer3" value="C">
+                     C) Only parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer3" value="D">
+                     D) Only a name
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+         </div>
+
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 4</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What are parameters in methods</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer4" value="A">
+                     A) Loops inside the methods
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer4" value="B">
+                     B) Input thats a method accepts
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer4" value="C">
+                     C) The name of the method accepts
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer4" value="D">
+                     D) Return type of method
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+         </div>
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 5</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What is a recrusive method?</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer5" value="A">
+                     A) A method that calls another method
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer5" value="B">
+                     B) A method calls itself
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer5" value="C">
+                     C) A method with multiple parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer5" value="D">
+                     D) A method that has no parameters
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+             </div>
+
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 6</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number"> What does the "return" statement do in a method?</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer6" value="A">
+                     A) Ends the method
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer6" value="B">
+                     B) Passes the values back to the calling code
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer6" value="C">
+                     C) Add two numbers
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer6" value="D">
+                     D) Stops the loop
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+             </div>
+
+
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 7</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What is method overloading?</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer7" value="A">
+                     A) Declaring the same method with different parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer7" value="B">
+                     B) Declaring a method with no parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer7" value="C">
+                     C) Using too many parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer7" value="D">
+                     D) Using a metod inside a loop
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+             </div>
+
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 8</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What is an optional argument in a method</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer8" value="A">
+                     A) A parameter that is not required
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer8" value="B">
+                     B) A method name
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer8" value="C">
+                     C) The return type                </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer8" value="D">
+                     D) The method declaration
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+             </div>
+
+
+         <div class="quiz-block">
+             <h2 class="questions">Question 9</h2>
+             <p class="lines">_____________________________________________________</p>
+             <h2 class="questions_number">What is the benefit of named arguments?</h2>
+             <form class="quiz-form">
+                 <label class="choice-block">
+                     <input type="radio" name="answer9" value="A">
+                     A) You can call a method in an order of parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer9" value="B">
+                     B) You must follow the order of parameters
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer9" value="C">
+                     C) It speeds up method execution
+                 </label>
+                 <label class="choice-block">
+                     <input type="radio" name="answer9" value="D">
+                     D) It avoid errors
+                 </label>
+                 <button type="submit">Submit</button>
+             </form>
+             </div>
+
+             <div class="quiz-block">
+                 <h2 class="questions">Question 10</h2>
+                 <p class="lines">_____________________________________________________</p>
+                 <h2 class="questions_number">What is the exit condition in recursion</h2>
+                 <form class="quiz-form">
+                     <label class="choice-block">
+                         <input type="radio" name="answer10" value="A">
+                         A) The point where recursion start
+                     </label>
+                     <label class="choice-block">
+                         <input type="radio" name="answer10" value="B">
+                         B) A condition where recursion stops
+                     </label>
+                     <label class="choice-block">
+                         <input type="radio" name="answer10" value="C">
+                         C) The method name
+                     </label>
+                     <label class="choice-block">
+                         <input type="radio" name="answer10" value="D">
+                         D) The return type
+                     </label>
+                     <button type="submit">Submit</button>
+                 </form>
+                 </div>
+
+
+         </div>
+     </div>
+     </dl>
+ </div>
+
+
+
+<footer class="footer">
+    <div class="footer-icons">
+        <a href="https://facebook.com" class="icon facebook">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" class="icon instagram">
+            <img src="instagram.jpg" alt="Instagram">
+        </a>
+        <a href="https://youtube.com" class="icon youtube">
+            <img src="youtube_orig.png" alt="YouTube">
+        </a>
+    </div>
+    <p>All rights reserved</p>
+</footer>
+
+<script>
+    let lastScrollTop = 0;
+const languageList = document.querySelector('.language-list');
+
+window.addEventListener('scroll', function() {
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+if (scrollTop > lastScrollTop && scrollTop > 100) {
+// Scrolling down
+languageList.style.transform = 'translateY(-600%)'; // Hide the list
+languageList.style.opacity = '0'; // Optional: Add fade effect
+} else if (scrollTop < lastScrollTop) {
+// Scrolling up
+languageList.style.transform = 'translateY(0)'; // Show the list
+languageList.style.opacity = '1'; // Optional: Fade in
+}
+
+lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+   </script>
+
+</body>
+</html>

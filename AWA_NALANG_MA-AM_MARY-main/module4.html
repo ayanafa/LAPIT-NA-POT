@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4</title>
+    <link rel="stylesheet" href="module4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="module4.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="#"><img src="logo.png" class="logo_pic"> </a>
+
+                </div>
+                <ul class="navbar">
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="landingpage.html#about">About</a></li>
+                    <li><a href="landingpage.html#creators">Creators</a></li>
+                    <li><a href="#">Lessons</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" class="search" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 20px; color: white; position: absolute;"></i>
+                </div>
+            </div>
+
+         <ul class="language-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li class="highlight">C#</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Go</li>
+        </ul>
+
+        </nav>
+
+
+    </header>
+    <div class="container">
+        <div class="scrollbar">
+            <ul>
+                <i class="fa-solid fa-arrow-right f2" style="padding-left: 2vh;"></i>
+                <li><a href="module1.html">Introduction to C#</a></li>
+                <i class="fa-solid fa-arrow-right f3"></i>
+                <li> <a href="module3.html">Conditionals and Loops in C#</a></li>
+                <i class="fa-solid fa-arrow-right f4"></i>
+                <a href="module2.html"></a>
+                <li><a href="module3.html">Methods in C#</a></li>
+                <i class="fa-solid fa-arrow-down"></i>
+                <li>Classes and Objects in C#</li>
+                <div class="descrip">
+                    <div class="links">
+                    <a href="#terms"><dd class="under_descrip"> • Classes and Objects</dd></a>
+                    <a href="#val"><dd class="under_descrip"> • Value and Reference Types</dd></a>
+                    <a href="#encap"><dd class="under_descrip"> • Encapsulation </dd></a>
+                    <a href="#access"><dd class="under_descrip"> • Access Modifiers</dd></a>
+                    <a href="#cons"><dd class="under_descrip"> • Constructors</dd></a>
+                    <a href="#prop"><dd class="under_descrip"> • Properties</dd></a>
+                    <a href="#quiz"><dd class="under_descrip"> • Quiz</dd></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <dl class="description-list"> <br>
+            <dt id="terms"> Classes and Objects </dt>
+            <dd> <span> What is Class?  </span> <br>
+                -	A blueprint in C# that defines variables and methods for an object. <Br>
+                <span> What is Objects? </span> <br>
+                -	An instance of a class representing its concrete form in a program. <br>
+
+            <dt id="val">  Value and Reference Types </dt>
+            <dd>  <span> A. Value and Reference Types</span><br>
+                - Stores data in the stack, used for static memory allocation with consistent memory requirements. <br>
+               <span> B.	Reference Types </span><br>
+                - Store data in the heap, used for dynamic memory allocation for objects; the heap’s address is stored in the stack. <br>
+                </dd>
+
+                <dt id="encap"> Encapsulation </dt>
+                <dd>- Hides internal workings of a class, combining members inside. It restricts external access and provides benefits like data security, flexibility, and code isolation.<br>
+                     <br>
+                    </dd>
+
+            <dt id="access"> Access Modifiers </dt>
+            <dd> <span> A.	Public </span> <br>
+                - Accessible outside the class. <br>
+                <span> B. Private </span> <br>
+                - Only accessible within the class. <br>
+                <span> C.  Protected </span> <br>
+                -  Accessible by the same class or derived classes. <br>
+             </dd>
+
+            <dt id="cons"> Constructors </dt>
+            <dd> -	Special methods automatically executed when an object is created. They have the same name as the class, no return type, and can have parameters. <br>
+                </dd>
+
+
+            <dt id="prop"> Properties </dt>
+            <dd> - Provides a flexible mechanism to read, write, and compute values of private fields in a class. They can use get and set accessors and can omit them to control behavior. <br>
+                <br>- Auto-Implemented Properties: Allow for quick and simple declarations of private members with minimal code <br>
+                 </dd>
+
+                 <p class="quiz_text">Quiz</p>
+                 <div class="quiz-container">
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 1</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">What is a class in C#?</h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer1" value="A">
+                                 A) A Method
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer1" value="B">
+                                 B.) A blueprint for objects
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer1" value="C">
+                                 C) A variable
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer1" value="D">
+                                 D) A loop
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                     </div>
+
+                     <h2 id="quiz"></h2>
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 2</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">What is an object? </h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer2" value="A">
+                                 A) A type of method
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer2" value="B">
+                                 B.) An intstance of a class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer2" value="C">
+                                 C) A condition
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer2" value="D">
+                                 D) A loop
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                     </div>
+
+
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 3</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">Where is data stored in value types?</h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer3" value="A">
+                                 A) In the heap
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer3" value="B">
+                                 B.) In the stack
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer3" value="C">
+                                 C) In the class                </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer3" value="D">
+                                 D) In the method
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                     </div>
+
+
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 4</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">What is encapsulation?</h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer4" value="A">
+                                 A) Showing all the internal details of a class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer4" value="B">
+                                 B.) Hiding the internal workings of a class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer4" value="C">
+                                 C) Adding variables to a class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer4" value="D">
+                                 D) Creating a loop inside a class
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                     </div>
+
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 5</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">What is a constructor in a class?</h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer5" value="A">
+                                 A) A method that runs when an object is created
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer5" value="B">
+                                 B.) A loop inside the class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer5" value="C">
+                                 C) A variable in the class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer5" value="D">
+                                 D) A condition in the class
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                         </div>
+
+
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 6</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number"> What does a public access modifier do? </h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer6" value="A">
+                                 A) Makes a method private
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer6" value="B">
+                                 B.) Allows access to members outside the class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer6" value="C">
+                                 C) Restricts access only to the class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer6" value="D">
+                                 D) Only allows access within a loop
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                         </div>
+
+
+
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 7</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">What does a private access modifier do?</h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer7" value="A">
+                                 A) Allows access from other classes
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer7" value="B">
+                                 B.) Restricts access to within the class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer7" value="C">
+                                 C) Makes the class public
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer7" value="D">
+                                 D) Allows access to objects
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                         </div>
+
+
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 8</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">What are properties in a class used for?</h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer8" value="A">
+                                 A) To read and write the values of fields
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer8" value="B">
+                                 B.) To define a method
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer8" value="C">
+                                 C) To loop through fields
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer8" value="D">
+                                 D) To loop through fields
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                         </div>
+
+
+                     <div class="quiz-block">
+                         <h2 class="questions">Question 9</h2>
+                         <p class="lines">_____________________________________________________</p>
+                         <h2 class="questions_number">What is an auto-implemented property?</h2>
+                         <form class="quiz-form">
+                             <label class="choice-block">
+                                 <input type="radio" name="answer9" value="A">
+                                 A) A property that is manually written out
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer9" value="B">
+                                 B.) A property that has minimal code
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer9" value="C">
+                                 C) A method inside the class
+                             </label>
+                             <label class="choice-block">
+                                 <input type="radio" name="answer9" value="D">
+                                 D) A loop inside the class
+                             </label>
+                             <button type="submit">Submit</button>
+                         </form>
+                         </div>
+
+                         <div class="quiz-block">
+                             <h2 class="questions">Question 10</h2>
+                             <p class="lines">_____________________________________________________</p>
+                             <h2 class="questions_number">Where is data stored in reference types? </h2>
+                             <form class="quiz-form">
+                                 <label class="choice-block">
+                                     <input type="radio" name="answer10" value="A">
+                                     A) In the stack
+                                 </label>
+                                 <label class="choice-block">
+                                     <input type="radio" name="answer10" value="B">
+                                     B.) In the heap
+                                 </label>
+                                 <label class="choice-block">
+                                     <input type="radio" name="answer10" value="C">
+                                     C) In a class
+                                 </label>
+                                 <label class="choice-block">
+                                     <input type="radio" name="answer10" value="D">
+                                     D) In a method
+                                 </label>
+                                 <button type="submit">Submit</button>
+                             </form>
+                             </div>
+
+
+                     </div>
+                 </div>
+                 </dl>
+             </div>
+
+
+
+             <footer class="footer">
+                <div class="footer-icons">
+                    <a href="https://facebook.com" class="icon facebook">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" class="icon instagram">
+                        <img src="instagram.jpg" alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com" class="icon youtube">
+                        <img src="youtube_orig.png" alt="YouTube">
+                    </a>
+                </div>
+                <p>All rights reserved</p>
+            </footer>
+
+            <script>
+                let lastScrollTop = 0;
+            const languageList = document.querySelector('.language-list');
+
+            window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling down
+            languageList.style.transform = 'translateY(-600%)'; // Hide the list
+            languageList.style.opacity = '1'; // Optional: Add fade effect
+            } else if (scrollTop < lastScrollTop) {
+            // Scrolling up
+            languageList.style.transform = 'translateY(0)'; // Show the list
+            languageList.style.opacity = '1'; // Optional: Fade in
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+            });
+               </script>
+
+
+             </body>
+             </html>
